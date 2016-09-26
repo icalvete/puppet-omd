@@ -25,7 +25,7 @@ define omd::site (
       unless  =>  "/usr/bin/omd sites | ${omd_command_unless}",
       notify  => Exec["restart_omd_site_${name}"]
   }
-  
+
   exec { "restart_omd_site_${name}":
       command     => '/usr/bin/omd restart',
       user        => 'root',
