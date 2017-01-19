@@ -1,11 +1,14 @@
 define omd::site (
 
-  $ensure   = 'present',
-  $password = 'omd'
+  $ensure       = 'present',
+  $password     = 'omd',
+  $labs_edition = false
 
 ) {
 
-  include omd
+  class{'omd':
+    labs_edition => $labs_edition
+  }
 
   validate_re($ensure, ['^present$', '^absent$'] )
 
