@@ -10,7 +10,7 @@ class omd::install (
     release  => $::lsbdistcodename,
     repos    => 'main',
     key      => {
-      'id'     => 'F8C1CA08A57B9ED7',
+      'id'     => 'F2F97737B59ACCC92C23F8C7F8C1CA08A57B9ED7',
       'server' => 'keyserver.ubuntu.com',
     },
     include  => {
