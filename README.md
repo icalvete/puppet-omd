@@ -6,7 +6,7 @@ Puppet manifest to install and configure OMD (The Open Monitoring Distribution)
 
 See [OMD site](http://omdistro.org/)
 
-##Example:
+## Example:
 
 ```puppet
 omd::site { 'site1':
@@ -32,13 +32,13 @@ omd::site { 'site1':
 ```
 
 
-##Requires:
+## Requires:
 
 * Only works on Ubuntu
 * [hiera](http://docs.puppetlabs.com/hiera/1/index.html)
 * https://github.com/puppetlabs/puppetlabs-apt.git
 * htpasswd::user from https://github.com/icalvete/puppet-htpasswd
 
-##Authors:
+## Authors:
 
 Israel Calvete Talavera <icalvete@gmail.com>
