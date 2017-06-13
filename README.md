@@ -31,6 +31,39 @@ omd::site { 'site1':
 }
 ```
 
+To setup the original welcome
+
+
+## Changed Default Settings for OMD-Labs
+OMD-Labs changes some default settings to get the most out of OMD. If you upgrade from an existing OMD installation, your settings will not be touched and you have to manually change those settings if you want to.
+
+### Naemon Core
+Naemon replaces Nagios as default core in OMD-Labs.
+
+To revert to the original setting, run:
+
+```
+omd config set CORE nagios
+```
+
+### Apache SSL/TLS Mode
+OMD-Labs comes with enabled SSL/TLS Apache by default.
+
+To revert to the original setting, run:
+
+```
+omd config set APACHE_MODE own
+```
+
+### Thruk as Default Web UI
+Thruk is the default web ui in OMD-Labs.
+
+To revert to the original setting, run:
+
+```
+omd config set DEFAULT_GUI welcome
+omd config set THRUK_COOKIE_AUTH off
+```
 
 ## Requires:
 
