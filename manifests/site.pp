@@ -6,9 +6,9 @@ define omd::site (
 
 ) {
 
-  class{'omd':
-    labs_edition => $labs_edition
-  }
+  #class{'omd':
+  #  labs_edition => $labs_edition
+  #}
 
   validate_re($ensure, ['^present$', '^absent$'] )
 
